@@ -7,11 +7,11 @@ services:
       container_name: fsb
       environment:
       # required
-       - API_ID=2201304 # change this to your ID
-       - API_HASH=4862ee2bf0fe8fbad582cb26d3d12e77 # change this to your HASH
-       - BOT_TOKEN=6031469337:AAHdUKqkU3DLflSZ_32yWAVH6xiT0mOwbZk #TGFileDownloadBot
-       - BIN_CHANNEL=-1001829780398 # paste channel ID
+       - API_ID=2148448 # change this to your ID
+       - API_HASH=afac821ab072847489f45f464f4fc63d # change this to your HASH
+       - BOT_TOKEN=1599099989:AAEcSvhimIeCdub5XPFS6hcZCEe03dFAoyk #TGFileDownloadBot
+       - BIN_CHANNEL=-1001672758629 # paste channel ID
       ports:
-       - 127.0.0.1:8000:80
+       - 1010:10
       volumes:
        - $HOME/TG-FileStreamBot:/app/.env
