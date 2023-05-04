@@ -30,7 +30,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def media_receive_handler(_, m: Message):
     log_msg = await m.copy(chat_id=Var.BIN_CHANNEL)
     stream_link = f"{Var.URL}{Var.BIN_CHANNEL_WITHOUT_MINUS}/{log_msg.id}/{quote_plus(get_name(log_msg))}"
-    short_link = f"{Var.URL}{Var.BIN_CHANNEL_WITHOUT_MINUS}/{log_msg.id}"
+    short_link = f"{Var.URL}{Var.BIN_CHANNEL_WITHOUT_MINUS}/{log_msg.id}/{quote_plus(get_name(log_msg))}"
     rm = InlineKeyboardMarkup(
         [[InlineKeyboardButton("Open", url=stream_link)]]
     )
